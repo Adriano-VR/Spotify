@@ -1,6 +1,6 @@
 import React from 'react';
-import spo from "../assets/icons/favicon.png"
-import search from "../assets/icons/search.png"
+import spo from "/assets/icons/favicon.png"
+import search from "/assets/icons/search.png"
 
 
 const Header: React.FC = () => {

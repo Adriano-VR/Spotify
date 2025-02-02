@@ -28,7 +28,7 @@ const SuaBiblioteca: React.FC = () => {
                         </div>
                 </div>
           
-          <div className='text-[#B3B3B3] text-[11px] px-5 flex flex-col gap-4 items-start  mb-4 '>
+          <div className='text-[#B3B3B3] text-[10px] px-5 flex flex-col gap-4 items-start  mb-4 '>
                     <ul className='flex gap-4'>
                     <li>Legal</li>
                     <li>Segurança e Centro de privacidade</li>
