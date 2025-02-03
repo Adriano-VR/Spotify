@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         fetch("http://localhost:3001/artists")
         .then((response) => response.json())
         .then((results) => {
-            const filteredResults = results.filter(artist =>
+            const filteredResults = results.filter((artist: { name: string }) =>
                 artist.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
             display(filteredResults);
