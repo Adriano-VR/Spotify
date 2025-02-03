@@ -78,10 +78,11 @@ const Main: React.FC = () => {
     : "Boa Noite";
 
   return (
-    <div className="bg-[#121212] rounded-xl p-5 max-h-[85vh] text-white ">
+    <div className="bg-[#121212] rounded-xl p-5 max-h-[85vh] text-white overflow-hidden ">
+      <div id="container_search">
       <h1 style={styles.titulo}>{greetingMessage} </h1>
       <p className="text-[24px] font-bold mb-10" >Navegar por todas as seções</p>
-      <section className="grid grid-cols-5 gap-2 relative overflow-y-auto max-h-[60vh] scrollbar-transparent ">
+      <section  className="grid grid-cols-5 gap-2 relative overflow-y-auto max-h-[60vh] scrollbar-transparent ">
       {playlist.map((item, index) => (
           <div style={{backgroundColor:item.color}}
           key={index} className="relative rounded-xl h-52 overflow-hidden">
@@ -90,6 +91,14 @@ const Main: React.FC = () => {
           </div>
         ))}
       </section>
+      </div>
+     
+      <section className="hidden  " id="results"> 
+        
+     
+
+      </section>
+    
     </div>
   );
 };
